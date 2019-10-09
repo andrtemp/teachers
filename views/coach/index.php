@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\CoachSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Тренеры';
+$this->title = 'Преподаватели';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="coach-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Добавить тренера', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить преподавателя', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

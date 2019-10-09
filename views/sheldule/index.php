@@ -79,7 +79,7 @@ $this->params['breadcrumbs'][] = $this->title;
 						    'name' => 'client_filter',
 				            'items' => $filter_client,
 				            'clientOptions' => ['theme' => 'classic'],
-						    'options' => ['placeholder' => 'Выбрать клиента']
+						    'options' => ['placeholder' => 'Выбрать студента']
 						]);
 				    ?>
 				</div>

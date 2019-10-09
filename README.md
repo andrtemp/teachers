@@ -1,2 +1,3 @@
 - composer install
 - setup /etc/hosts
+- change config/db.php settings

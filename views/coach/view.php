@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Coach */
 
 $this->title = $model->person->name.' '.$model->person->second_name;
-$this->params['breadcrumbs'][] = ['label' => 'Тренеры', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Преподаватели', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $model->person->name.' '.$model->person->second_name;
 ?>
 <div class="coach-view">

@@ -20,7 +20,7 @@ use yii\helpers\Url;
     			<?php
     			for($i=1;$i<8;$i++){
     				for($j=1;$j<=count($halls);$j++){
-    					echo '<th>Зал'.$j.'</th>';
+    					echo '<th>Группа '.$j.'</th>';
     				}
     			}
     			?>
@@ -100,7 +100,7 @@ use yii\helpers\Url;
 								$mess = array('name' => '', 'phone' => '', 'stake' =>'');
 							}
 							$modal_label .=date('H:i',strtotime($value['time'])).'-'.date('H:i',strtotime($value['end_time'])).'<br>'.$mess['name'].'<br>'.$cr7['name'].'<hr/>';
-							$modal_text .= '<p>Тип занятия: '.$status[$value['type_note']-1].'</p><p>Дата и время: '.$value['date'].' | '.date('H:i',strtotime($value['time'])).' - '.date('H:i',strtotime($value['end_time'])).'</p>'.'<p>Клиент: '.$mess['name'].' | '.$mess['phone'].' | '.$mess['stake'].'</p><p>Тренер: '.$cr7['name'].' | '.$cr7['phone'].' | '.$cr7['tarif'].'</p><p>Заметки: '.$value['note'].'</p>';
+							$modal_text .= '<p>Тип занятия: '.$status[$value['type_note']-1].'</p><p>Дата и время: '.$value['date'].' | '.date('H:i',strtotime($value['time'])).' - '.date('H:i',strtotime($value['end_time'])).'</p>'.'<p>Студент: '.$mess['name'].' | '.$mess['phone'].' | '.$mess['stake'].'</p><p>Преподаватель: '.$cr7['name'].' | '.$cr7['phone'].' | '.$cr7['tarif'].'</p><p>Заметки: '.$value['note'].'</p>';
 							$modal_text .= ($disabled) ? '<input class="status_l" name="status_" type="checkbox" data-url="'.Url::to(['checked']).'" data-id="'.$value['id'].'" '.$checked.'><label for="status_">Выполнено</label>'.Html::a('Удалить', ['delete', 'id' => $value['id']], [
 								'class' => 'btn btn-warning',
 								'data' => [
@@ -123,7 +123,7 @@ use yii\helpers\Url;
 							]) : '';
 							
 						if(!($value['type_note'] == 2 || $value['type_note'] == 4 || !$disabled)){
-						   $footer_for_modal.=Html::a('Создать запись', ['create'],[
+						   $footer_for_modal.=Html::a('Создать занятие', ['create'],[
 								'data'=>[
 									'method' => 'post',
 									//'confirm' => 'Are you sure?',
@@ -133,7 +133,7 @@ use yii\helpers\Url;
 						}
 					    if($disabled) {
 					        Modal::begin([
-    						    'header' => '<h2>Занято</h2>',
+    						    'header' => '<h2>Занятие</h2>',
     						    'toggleButton' => ['label' => \yii\helpers\StringHelper::truncate($modal_label,50,'...'),'tag'=>'td','class'=>$class.' custom_c','data-time' => $h.':'.$m,'data-date' => $full_date,],
     						    'footer' => $footer_for_modal,
     					    ]);

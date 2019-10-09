@@ -39,7 +39,6 @@ AppAsset::register($this);
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
                 ['label' => 'Расписание', 'url' => ['/sheldule']],
-                ['label' => 'Справка', 'url' => ['/site/about']],
                 Yii::$app->user->isGuest ? (
                 ['label' => 'Логин', 'url' => ['/site/login']]
                 ) : (
