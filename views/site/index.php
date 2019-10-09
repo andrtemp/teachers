@@ -1,13 +1,12 @@
 <?php
 /* @var $this yii\web\View */
 
-$this->title = 'BIG DANCE';
+$this->title = 'Stud Helper';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <img class="main_img" src="<?php echo Yii::getAlias('@web').'/LOGO.png'?>">
-
+        <h1 class="text-center">Расписсание</h1>
     </div>
 
     <div class="body-content">

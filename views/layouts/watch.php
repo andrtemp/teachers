@@ -29,7 +29,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
         NavBar::begin([
-            'brandLabel' => 'BIG Dance',
+            'brandLabel' => 'Stud Helper',
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-inverse navbar-fixed-top navBD',
@@ -67,7 +67,7 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-            <p class="pull-left">&copy; Big Dance 2017-<?= date('Y') ?></p>
+            <p class="pull-left">&copy; Stud Helper 2019-<?= date('Y') ?></p>
         </div>
     </footer>
 
