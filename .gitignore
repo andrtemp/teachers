@@ -5,3 +5,5 @@ web
 composer.lock
 yii
 *.pyc
+node_modules
+package-lock.json
