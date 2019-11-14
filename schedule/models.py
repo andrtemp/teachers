@@ -27,6 +27,9 @@ class Student(models.Model):
     person = models.ForeignKey(Person, on_delete=models.CASCADE)
     class_name = models.ForeignKey(Class, on_delete=models.CASCADE)
 
+    def _get_age(self):
+        return self.person.birth_date
+
     def __str__(self):
         return self.person.name
 
