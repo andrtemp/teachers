@@ -1,3 +1,19 @@
+.bg-panel {
+    background-color: #DAD7D7;
+}
+
+.c-white {
+    color:white;
+}
+
+.footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
 body {
-    background-color: red;
+    min-height: 100%;
+    background-color: #F7F7F7;
 }

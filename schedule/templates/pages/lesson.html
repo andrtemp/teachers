@@ -2,5 +2,22 @@
 
 
 {% block content %}
+    <div class="card">
+        <div class="card-header">
 
+            <h2>{{ lesson }}</h2>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                {% for person in attended %}
+                    <li class="list-group-item bg-success">{{ person.student }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="list-group">
+                {% for person in not_attended %}
+                    <li class="list-group-item bg-danger">{{ person.student }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 {% endblock %}
